@@ -47,8 +47,12 @@ contract Web3RSVP {
             confrimedRSVPs,
             claimedRSVPs,
             false
-        );
 
+    require(idToEvent[eventID].eventTimestamp == 0, "ALREADY REGISTERED");
+
+    
+        );
+    
 
     }
 
